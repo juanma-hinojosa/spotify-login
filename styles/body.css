@@ -1,7 +1,7 @@
 body {
     background-image: 
         linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-        url("../images/hero-section/istockphoto-1133743469-640x640.jpg");
+        url(../images/hero-section/istockphoto-1133743469-640x640.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
