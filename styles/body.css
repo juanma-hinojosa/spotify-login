@@ -1,0 +1,161 @@
+body {
+    background-image: 
+        linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+        url("../images/hero-section/istockphoto-1133743469-640x640.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 80px 60px; */
+}
+.hero-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    padding: 80px 60px;
+}
+
+/* Columna Izquierda */
+
+body > .hero-section > .column-left {
+    width: 25%;
+    text-align: center;
+    animation-duration: .6s;
+    animation-name: texto-left;
+}
+
+body > .hero-section > .column-left > .imagen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+body > .hero-section > .column-left > .imagen > img {
+    width: 60%;
+}
+
+body > .hero-section > .column-left > a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 15px 0px;
+    border-radius: 25px;
+    letter-spacing: 2px;
+    background-color: var(--verde);
+    font-weight: 900;
+    color: white;
+    margin-bottom: 30px;
+    transition: .3s;
+}
+
+body > .hero-section > .column-left > a:hover {
+    letter-spacing: 3px;
+}
+
+body > .hero-section > .column-left > a:nth-child(4) {
+    background-color: white;
+    color: black;
+}
+
+body > .hero-section > .column-left > .text-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(194, 189, 189);
+    margin-bottom: 24px;
+}
+
+body > .hero-section > .column-left > .text-left > h3 {
+    font-size: .7rem;
+    letter-spacing: 2px;
+    
+}
+
+body > .hero-section > .column-left > .text-left > .line {
+    width: 20px;
+    height: 1.4px;
+    background-color: rgb(194, 189, 189);
+}
+
+/* Linea central */
+body > .hero-section > .central-line {
+    width: 1.2px;
+    height: 400px;
+    background-color: rgb(194, 189, 189);
+}
+
+/* Columna Derecha */
+
+body > .hero-section > .column-right {
+    width: 50%;
+    animation-duration: .6s;
+    animation-name: texto-right;
+}
+
+body > .hero-section > .column-right > p {
+    color: var(--verde);
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+body > .hero-section > .column-right > h2 {
+    color: rgb(194, 189, 189);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+body > .hero-section > .column-right > .text-right{
+    color: white;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+body > .hero-section > .column-right > .text-right > i {
+    color: var(--verde);
+    margin-right: 10px;
+}
+
+@keyframes texto-right {
+    from {
+        transform: translateX(150px);
+    }
+    to {
+        transform:translateX(0px);
+    }
+}
+
+@keyframes texto-left {
+    from {
+        transform: translateX(-150px);
+    }
+    to {
+        transform:translateX(0px);
+    }
+}
+
+@media screen and (max-width:890px) {
+    body {
+        background-image: none;
+        background-color: var(--negro);
+    }
+
+    body > .hero-section > .column-left {
+        width: 100%;
+    }
+
+    body > .hero-section > .central-line {
+        display: none;
+    }
+    body > .hero-section > .column-right {
+        display: none;
+    }
+}

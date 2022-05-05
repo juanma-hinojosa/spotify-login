@@ -1,0 +1,12 @@
+:root {
+    --verde: #1db954;
+    --negro: #191414;
+    --blanco: #ffffff;
+}
+
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
